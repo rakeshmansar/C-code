@@ -1,0 +1,34 @@
+C program to find factorial of a number
+
+In this program, we will read and integer number and find the factorial using different methods - using simple method (without using user define function), using User Define Function and using Recursion.
+
+What is factorial?
+Factorial is the product of an integer with it's all below integer till 1. In mathematic representation factorial represents by ! sign.
+
+For Example:
+Factorial 5 is:
+5! = 120 [That is equivalent to 5*4*3*2*1 =120]
+
+
+#include <stdio.h>
+
+
+int fact(int n){
+    
+    if(n==0||n==1)
+    return 1;
+    
+    return n*fact(n-1);
+    
+}
+
+int main()
+{   
+    int n;
+    printf("enter the number\n");
+    scanf("%d",&n);
+    
+    printf("Factorial of %d is %d",n,fact(n));
+
+    return 0;
+}
