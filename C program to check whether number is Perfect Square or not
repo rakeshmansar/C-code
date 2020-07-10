@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int num,ivar;
+    float fvar;
+    
+    printf("enter the number \n");
+    scanf("%d",&num);
+    fvar=sqrt((double)num);
+    
+    ivar=fvar;
+    
+    if(ivar==fvar)
+    printf("perfect square\n");
+    else
+    printf("not a perfect square\n");
+    return 0;
+}
