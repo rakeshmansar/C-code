@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int n,r,sum=0;
+    printf("ENTER THE YEAR\n");
+    scanf("%d",&n);
+    
+    
+    for(int i=1;i<=n;i++)
+    {
+   
+    if(checkLeap(i))
+    
+    printf("%d\t",i);
+   
+    }
+    return 0;
+}
+
+int checkLeap(int n)
+{
+    if((n%400==0)||((n%4==0)&&(n%100 !=0)))
+    return 1;
+    
+    return 0;
+    
+    
+}
