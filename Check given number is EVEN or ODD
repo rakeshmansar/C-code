@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int n,r,sum=0;
+    printf("ENTER THE NUMBER\n");
+    scanf("%d",&n);
+    
+    if(n%2==0)
+    printf("EVEN NUMBER\n");
+    
+    else
+    printf("ODD NUMBER\n");
+   
+    return 0;
+}
